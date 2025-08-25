@@ -89,16 +89,7 @@ try {
 
             # ユーザープロファイルを削除
             Write-Host "プロファイルを削除中... $($Profile.LocalPath)" -ForegroundColor Cyan
-            # $Profile.Delete()
-            
-            # 削除が成功したことを確認
-            <#
-            if (-not (Get-WmiObject -Class Win32_UserProfile -Filter "LocalPath = '$($Profile.LocalPath)'")) {
-                Write-Host "プロファイル '$($Profile.LocalPath)' は正常に削除されました。" -ForegroundColor Green
-            } else {
-                Write-Host "プロファイル '$($Profile.LocalPath)' の削除に失敗しました。" -ForegroundColor Red
-            }
-            #>
+            $Profile.Delete()
         }
     }
 
