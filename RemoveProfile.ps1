@@ -52,7 +52,7 @@ $ExclusionList = @(
     "DefaultAccount"
     "Guest"
     "TEMP" # 一時プロファイル
-    "localadmin"    # 川崎市住宅供給公社
+    "localadmin"    # user's sample
 )
 
 # 現在ログインしているユーザのプロファイル名
